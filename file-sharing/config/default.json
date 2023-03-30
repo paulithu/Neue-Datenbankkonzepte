@@ -1,0 +1,6 @@
+{
+  "PORT": 3001,
+  "DBHost": "mongodb://mongo:27017/fileUpload",
+  "secret": "filesharing",
+  "apisFileName": "config/settings/apis/allApis.json"
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- Icons für die Buttons von Cloudflare (Upload, Download, Delete) -->
+    <title>File Sharing System</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form method="POST" enctype="multipart/form-data" action="/uploadFile">
+          <label for="file">Wähle eine Datei:</label>
+          <input type="file" id="file" name="file" multiple />
+          <br />
+          <input type="submit" value="Upload" />
+        </form>
+      </div>
+      <div class="success-message" style="display: none"></div>
+      <div class="files"></div>
+      <div class="download-link">
+      </div>
+      <div class="file-box">
+        <ul id="file-list" class="file-list"></ul>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
